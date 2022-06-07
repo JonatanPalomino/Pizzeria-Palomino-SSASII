@@ -1,0 +1,47 @@
+$colorPrimario: blanchedalmond;
+
+.letrasColor {
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@mixin FontMargPad ($fontsize, $margin, $padding) {
+    font-size: $fontsize;
+    margin: $margin;
+    padding: $padding;
+}
+
+#encabezado h1 {
+    @extend .letrasColor;
+    @include FontMargPad (8rem, 15px, 0px);
+}
+
+#encabezado img {
+    @include FontMargPad (0rem, 0px, 15px 15px 0px 15px);
+}
+#navegacion a {
+    @extend .letrasColor;
+    @include FontMargPad (20px, 0px, 10px);
+    display: block;
+    color: $colorPrimario;
+    background-color: brown;
+    text-decoration: none;
+}
+.subtitulo {
+    @extend .letrasColor;
+    @include FontMargPad (40px, auto, 8px);
+    display: block;
+    text-align: center;
+    color: $colorPrimario;
+    background-color: rgb(202, 65, 47);
+}
+.textoFooter{
+    @include FontMargPad (15px, 20px, 0px);
+    color: $colorPrimario;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto{
+    @include FontMargPad (25px, auto, 30px);
+    color: $colorPrimario;
+}
