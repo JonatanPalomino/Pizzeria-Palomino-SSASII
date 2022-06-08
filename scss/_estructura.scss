@@ -8,8 +8,9 @@
     ;
     background-color: rgba(131, 0, 0, 0.87);
     width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto minmax(200px, auto) 90px;
+    grid-template-columns: 85%;
+    grid-template-rows: auto auto minmax(200px, auto) minmax(100px, auto);
+    justify-content: center;
 }
 
 header {
@@ -26,6 +27,10 @@ main {
 
 footer {
     grid-area: Pie;
+}
+
+#encabezado{
+    background-color: rgba(131, 0, 0, 0.87);
 }
 #navegacion {
     display: flex;
@@ -45,6 +50,7 @@ footer {
     padding: 5px 15px 0px 15px;
 }
 #piePagina {
+    background-color: rgb(167, 2, 2);
     display: flex;
     margin: 8px;
 }
@@ -69,6 +75,9 @@ form {
     display: flex;
     margin: 20px;
     justify-content: center;
+}
+fieldset{
+    background-color: rgb(170, 3, 3);
 }
 legend {
     display: flex;
