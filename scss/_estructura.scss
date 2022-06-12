@@ -96,6 +96,9 @@ form label {
     #articulos {
         grid-template-columns: repeat(2, 50%);
     }
+    #encabezado h1 {
+        font-size: 5rem;
+    }
 }
 @media (max-width: 767px){
     .galeriaImagenes {
@@ -103,5 +106,8 @@ form label {
     }
     #articulos {
         grid-template-columns: 100%;
+    }
+    #encabezado h1 {
+        font-size: 3rem;
     }
 }
