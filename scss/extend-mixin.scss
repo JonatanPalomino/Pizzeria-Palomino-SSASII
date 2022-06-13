@@ -17,7 +17,7 @@ $colorPrimario: blanchedalmond;
 }
 
 #encabezado img {
-    @include FontMargPad (0rem, 0px, 15px 15px 15px 15px);
+    @include FontMargPad (0rem, 0px, 0px 0px 15px 15px);
 }
 #navegacion a {
     @extend .letrasColor;
