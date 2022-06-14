@@ -36,9 +36,16 @@ $colorPrimario: blanchedalmond;
     background-color: rgb(202, 65, 47);
 }
 .textoFooter{
-    @include FontMargPad (15px, 20px, 0px);
+    @include FontMargPad (15px, auto, 15px);
     color: $colorPrimario;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: rgb(240, 196, 139);
+    }
 }
 
 .texto{
@@ -48,4 +55,8 @@ $colorPrimario: blanchedalmond;
 
 .bordes{
     border: 5px solid rgb(231, 190, 8);
+}
+
+.logosAncho {
+    width: 100px;
 }
