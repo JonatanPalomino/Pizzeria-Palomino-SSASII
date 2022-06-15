@@ -17,7 +17,7 @@ $colorPrimario: blanchedalmond;
 }
 
 #encabezado img {
-    @include FontMargPad (0rem, 0px, 0px 0px 15px 15px);
+    @include FontMargPad (0px, 0px, 0px 0px 15px 15px);
 }
 #navegacion a {
     @extend .letrasColor;
@@ -36,10 +36,9 @@ $colorPrimario: blanchedalmond;
     background-color: rgb(202, 65, 47);
 }
 .textoFooter{
-    @include FontMargPad (15px, auto, 15px);
+    @include FontMargPad (15px, 0px, 0px);
     color: $colorPrimario;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
     list-style: none;
 
     a {

@@ -8,9 +8,8 @@
     ;
     background-color: rgba(131, 0, 0, 0.87);
     width: 100%;
-    grid-template-columns: 85%;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto minmax(200px, auto) minmax(150px, auto);
-    justify-content: center;
 }
 
 header {
@@ -31,6 +30,12 @@ footer {
 
 #encabezado{
     background-color: rgba(131, 0, 0, 0.87);
+}
+#principal{
+    display: grid;
+    grid-template-columns: 85%;
+    justify-content: center;
+    padding: 15px;
 }
 #navegacion {
     display: flex;
@@ -104,6 +109,9 @@ form {
     #encabezado h1 {
         font-size: 6rem;
     }
+    .logosAncho {
+        width: 50px;
+    }
 }
 @media (max-width: 767px){
     .galeriaImagenes {
@@ -114,5 +122,8 @@ form {
     }
     #encabezado h1 {
         font-size: 2rem;
+    }
+    .logosAncho {
+        width: 50px;
     }
 }
