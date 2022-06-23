@@ -44,12 +44,10 @@ footer {
     margin: 0;
     text-align: center;
 }
-.galeriaImagenes{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.galeriaImagenes div{
-    margin: 15px;
+.galeriaImagenes img{
+    padding: 15px;
+    height: 1080px;
+    width: 100%;
 }
 .carrusel img {
     padding: 5px 15px 0px 15px;
@@ -61,7 +59,7 @@ footer {
     font-size: 40px;
 }
 
-#articulos {
+.articulos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 15px;
@@ -73,6 +71,11 @@ footer {
 }
 .articulos p {
     padding: 5px;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px;
 }
 form {
     display: flex;
@@ -100,11 +103,14 @@ form {
 
 
 @media (max-width: 1199px){
-    .galeriaImagenes {
-        grid-template-columns: repeat(2, 1fr);
+    .galeriaImagenes img{
+        height: 550px;
     }
-    #articulos {
+    .articulos {
         grid-template-columns: repeat(2, 50%);
+    }
+    .productos {
+        grid-template-columns: 100%
     }
     #encabezado h1 {
         font-size: 6rem;
@@ -112,18 +118,33 @@ form {
     .logosAncho {
         width: 50px;
     }
+    .subtitulo{
+        font-size: 4rem;
+    }
+    .texto{
+        font-size: 1rem;
+    }
+    section h3 {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 767px){
-    .galeriaImagenes {
-        grid-template-columns: 100%
+    .galeriaImagenes img{
+        height: 250px;
     }
-    #articulos {
+    .articulos {
+        grid-template-columns: 100%;
+    }
+    .productos {
         grid-template-columns: 100%;
     }
     #encabezado h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .logosAncho {
         width: 50px;
+    }
+    .subtitulo{
+        font-size: 2rem;
     }
 }

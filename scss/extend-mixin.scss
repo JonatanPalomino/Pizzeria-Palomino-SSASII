@@ -21,7 +21,7 @@ $colorPrimario: blanchedalmond;
 }
 #navegacion a {
     @extend .letrasColor;
-    @include FontMargPad (20px, 0px, 10px);
+    @include FontMargPad (1.25rem, 0px, 10px);
     display: block;
     color: $colorPrimario;
     background-color: brown;
@@ -29,14 +29,13 @@ $colorPrimario: blanchedalmond;
 }
 .subtitulo {
     @extend .letrasColor;
-    @include FontMargPad (40px, auto, 8px);
-    display: block;
+    @include FontMargPad (4.5rem, auto, 8px);
     text-align: center;
     color: $colorPrimario;
     background-color: rgb(202, 65, 47);
 }
 .textoFooter{
-    @include FontMargPad (15px, 0px, 0px);
+    @include FontMargPad (1rem, 0px, 0px);
     color: $colorPrimario;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     list-style: none;
@@ -48,7 +47,7 @@ $colorPrimario: blanchedalmond;
 }
 
 .texto{
-    @include FontMargPad (25px, auto, 30px);
+    @include FontMargPad (1.5rem, auto, 30px);
     color: $colorPrimario;
 }
 
@@ -58,4 +57,14 @@ $colorPrimario: blanchedalmond;
 
 .logosAncho {
     width: 100px;
+}
+@media (min-width: 1200px) {
+    .sinEstilo {
+        list-style: none;
+    }
+}
+section h3{
+    text-align: center;
+    color: $colorPrimario;
+    @include FontMargPad (2.2rem, auto, 3px);
 }
